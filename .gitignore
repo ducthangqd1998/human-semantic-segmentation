@@ -1,0 +1,13 @@
+.vscode
+.idea
+__pycache__
+data/
+env/
+model/
+img/
+img_test/
+runs/
+img_save/
+mask/
+model/
+models/
