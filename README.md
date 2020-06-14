@@ -3,12 +3,12 @@
 -   Mô hình segmenation: Deeplab v3 plus
 -   Backbone mode: Resnet 50
 ## 2, Dữ liệu
-- Tài bộ dữ liệu **Supervisely Person** [**tại đây**](https://drive.google.com/file/d/1elfk_otCj79g4zPR7e_JCov0fjx_Xs8w/view?usp=sharing) 
+- Tài bộ dữ liệu **Supervisely Person** [**tại đây**](https://drive.google.com/file/d/1elfk_otCj79g4zPR7e_JCov0fjx_Xs8w/view?usp=sharing) và tiến hành giải nén.
 - Chạy câu lệnh sau để tiến hành xử lí dữ liệu: 
 ## 3, Cài đặt 
 - Cài đặt **virtualenv** để cài đặt môi trường ảo cho project 
 - Cài đặt các thư viện cần thiết từ file **requirement.txt**: ```pip3 install -r requirement.txt```
-- Để huấn luyện mô hình: ```python3 train.py```
+- Để huấn luyện mô hình: ```python3 main.py```
 - Tại model [**tại đây**](https://drive.google.com/file/d/1QQAcT8CJ4-65xDw6KDdIRZgdnGdbx7tp/view?usp=sharing), để model tại thư mục **model/**
 - Chạy model tại localhost: ```python3 app.py```
 - Mở ứng dụng postman và tạo 1 request tới server: 
