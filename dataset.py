@@ -13,16 +13,15 @@ class Dataset(torch.utils.data.Dataset):
         self.mask_paths = mask_paths
         self.aug = aug
         self.image_transform = transforms.Compose([
-            transforms.RandomSizedCrop(256)
+            transforms.RandomSizedCrop(256),
             transforms.RandomHorizontalFlip(),
-            transforms.RandomCrop(224, 224),
+            transforms.RandomCrop([224, 224]),
             transforms.ToTensor(),
             transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
         ])
 
         self.mask_transform = transforms.Compose([
-            transforms.F
-            transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
+            transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
             transforms.ToTensor(),
         ])
 

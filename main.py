@@ -36,14 +36,14 @@ def main():
         train_dataset,
         batch_size=batch_size,
         shuffle=True,
-        pin_memory=True,
-        drop_last=True)
+        pin_memory=False,
+        drop_last=False)
 
     val_loader = torch.utils.data.DataLoader(
         val_dataset,
         batch_size=batch_size,
         shuffle=False,
-        pin_memory=True,
+        pin_memory=False,
         drop_last=False)
 
     best_iou = 0
