@@ -18,10 +18,10 @@ from config import *
 
 
 def main():
-    train_img_paths = glob('data/people/train/images/*')
-    train_mask_paths = glob('data/people/train/masks/*')
-    val_img_paths = glob('data/people/valid/images/*')
-    val_mask_paths = glob('data/people/valid/masks/*')
+    train_img_paths = glob('data/people/train/image/*')
+    train_mask_paths = glob('data/people/train/mask/*')
+    val_img_paths = glob('data/people/valid/image/*')
+    val_mask_paths = glob('data/people/valid/mask/*')
 
     model = Deeplab_v3(class_number=num_classes)
 
